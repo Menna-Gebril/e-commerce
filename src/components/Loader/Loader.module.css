@@ -1,0 +1,64 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.spinDots {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: dotsSpin 1s linear infinite;
+}
+
+.spinDots span {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(37, 156, 37);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: rotate(var(--r)) translateX(30px);
+  opacity: var(--o);
+}
+
+/* 8 dots around the circle */
+.spinDots span:nth-child(1) {
+  --r: 0deg;
+  --o: 1;
+}
+.spinDots span:nth-child(2) {
+  --r: 45deg;
+  --o: 0.85;
+}
+.spinDots span:nth-child(3) {
+  --r: 90deg;
+  --o: 0.7;
+}
+.spinDots span:nth-child(4) {
+  --r: 135deg;
+  --o: 0.55;
+}
+.spinDots span:nth-child(5) {
+  --r: 180deg;
+  --o: 0.4;
+}
+.spinDots span:nth-child(6) {
+  --r: 225deg;
+  --o: 0.3;
+}
+.spinDots span:nth-child(7) {
+  --r: 270deg;
+  --o: 0.2;
+}
+.spinDots span:nth-child(8) {
+  --r: 315deg;
+  --o: 0.15;
+}
+
+@keyframes dotsSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

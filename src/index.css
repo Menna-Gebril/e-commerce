@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face{
+  font-family: "Exo";
+  src: url("./assets/fonts/Exo-Regular.ttf");
+}
+body{
+  font-family: "Exo", sans-serif  !important;
+}
+@layer utilities {
+  .row {
+    @apply flex flex-wrap;
+  }
+}
+h2 {
+  position: relative;
+}
+.line::before {
+  position: absolute;
+  top: 2px;
+  left: -12px;
+  background: linear-gradient(to bottom, #00B076, #00865C);
+  width: 6px;
+  height: 35px;
+  border-radius: 25px;
+  content: "";
+}

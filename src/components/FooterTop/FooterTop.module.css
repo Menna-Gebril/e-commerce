@@ -1,0 +1,8 @@
+:root{
+    --bg-primry-100:#f0fdf4;
+    --bg-border-400:#dcfce7;
+}
+.FooterTop {
+  background-color: var(--bg-primry-100);
+  border: 1px solid var(--bg-border-400);
+}

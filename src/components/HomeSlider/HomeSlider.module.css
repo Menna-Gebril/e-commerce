@@ -1,0 +1,17 @@
+.HomeSlider {
+  background-image:
+    linear-gradient(to right, rgba(19, 185, 81, 0.6), rgba(19, 185, 81, 0.6)),
+    url("../../assets/images/home-slider-1.d79601a8.png");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.SliderContent {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .HomeSlider {
+    height: 60vh;
+  }
+}
